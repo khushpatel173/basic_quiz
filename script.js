@@ -163,7 +163,8 @@ if (score == 5) {
   } else {
     remarks.innerText = "Keep studying! You'll get better!";
   }
-  restart_btn.addEventListener("click" , ()=>{
+}
+restart_btn.addEventListener("click" , ()=>{
     score = 0;
     queno = 1;
     // remove and add the class
@@ -171,4 +172,3 @@ if (score == 5) {
     que_div.classList.remove("screen");
     question(score , queno);
   })
-}
